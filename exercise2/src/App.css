@@ -1,0 +1,83 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  animation: animate__animated animate__flipInY;
+}
+
+.logo {
+  height: 1em;
+  padding: 2em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.low-prior {
+  color: #07bf2f;
+  animation: myFadeIn 2s;
+}
+
+.high-prior {
+  color: #f00;
+  animation: myFadeIn 2s;
+}
+
+.input-recommended {
+  border-color: #61dafb;
+}
+
+
+
+.input-invalid {
+  border-color: #f00;
+}
+
+.input-invalid:focus {
+  border-color: #f00;
+  box-shadow: 0 0 0 0.2rem #f00;
+}
+
+.text-important {
+   color: rgba(45, 195, 180, 0.868);
+   animation: myFadeIn 2s;
+}
+
+@keyframes myFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
